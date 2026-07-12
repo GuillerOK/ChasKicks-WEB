@@ -24,7 +24,7 @@
    por defecto. box-sizing: border-box hace que padding y border NO aumenten
    el tamaño declarado de un elemento, evitando desbordes inesperados.
    ========================================================================== */
-*, *::before, *::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -316,59 +316,6 @@ p {
     overflow: hidden;
 }
 
-/* Hero section con titulo y texto descriptivo sobre imagen de fondo */
-#hero {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-}
-
-#hero img.hero-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-#hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 60px 0;
-}
-
-.hero-content h2 {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--color4);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    line-height: 1.1;
-    text-align: left;
-}
-
-.hero-content p {
-    font-size: 16px;
-    color: var(--color5);
-    font-family: var(--fuente2);
-    line-height: 1.7;
-    margin-bottom: 30px;
-    max-width: 500px;
-    text-align: left;
-}
 
 /* Seccion Quienes Somos - fondo blanco con texto oscuro */
 #about {
@@ -1301,15 +1248,6 @@ p {
     #contacto-principal .row .row {
         flex-direction: column;
     }
-
-    /* Hero section en movil */
-    .hero-content h2 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
 }
 
 
@@ -1384,20 +1322,6 @@ p {
     .tbl-tallas th,
     .tbl-tallas td {
         padding: 6px 4px;
-        font-size: 12px;
-    }
-
-    /* Hero section en movil pequeño */
-    .hero-content h2 {
-        font-size: 22px;
-    }
-
-    .hero-content p {
-        font-size: 13px;
-    }
-
-    .hero-content .services-button {
-        padding: 6px 14px;
         font-size: 12px;
     }
 }
