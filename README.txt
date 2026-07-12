@@ -2,7 +2,7 @@ PLANTILLA USADA PARA LA PAGINA WEB:
 https://demo.unitemplates.com/sombra/index.php/home-1
 
 LINK DE NUESTRA PAGINA CON HOST GITHUB:
-https://guillerok.github.io/apf3_ChasKicks_WEB/
+https://guillerok.github.io/ExpoFinal_ChasKicks_WEB/
 
 
 ==============================================================================
