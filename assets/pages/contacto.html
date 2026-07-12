@@ -13,20 +13,16 @@
 </head>
 <body>
 
-    <!-- Barra superior con telefono, email, horario y redes sociales -->
     <header id="header1">
         <div class="header-flexbox container padding-xs">
             <div class="header-left">
                 <a href="tel:+51978376193"><i class="fa-solid fa-phone"></i> +51 978 376 193</a>
-                <a href="mailto:contacto@chaskicks.pe"><i class="fa-regular fa-envelope"></i> contacto@chaskicks.pe</a>
-                <span class="date-text"><i class="fa-regular fa-clock"></i> Lun - Sab: 9:00 AM - 8:00 PM</span>
+                <span class="date-text"><i class="fa-regular fa-clock"></i> Lun - Sáb: 9:00 AM - 8:00 PM</span>
             </div>
             <div class="social-links">
                 <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
                 <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
                 <a target="_blank" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
                 <a target="_blank" href="https://whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
@@ -136,20 +132,20 @@
                         <form action="#" method="POST">
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-control" type="text" placeholder="Nombre" required minlength="3">
+                                    <input class="form-control" type="text" placeholder="Nombre completo" required minlength="3" maxlength="80">
                                 </div>
                                 <div class="col">
-                                    <input class="form-control" type="email" placeholder="Correo electronico" required>
+                                    <input class="form-control" type="email" placeholder="Correo electronico" required maxlength="100">
                                 </div>
                             </div>
                             <div>
-                                <input class="form-control" type="text" placeholder="Asunto" required>
+                                <input class="form-control" type="tel" placeholder="Telefono (+51 999 999 999)" required maxlength="20">
                             </div>
                             <div>
-                                <textarea class="form-control" placeholder="Mensaje..." rows="6" required></textarea>
+                                <input class="form-control" type="text" placeholder="Asunto" required maxlength="100">
                             </div>
                             <div>
-                                <input class="form-control" type="text" placeholder="2+3=?">
+                                <textarea class="form-control" placeholder="Mensaje..." rows="6" required maxlength="500"></textarea>
                             </div>
                             <div>
                                 <input type="checkbox" id="acepto" required>
@@ -211,31 +207,23 @@
 
     </main>
 
-    <!-- Footer con nombre, contacto, redes y derechos reservados -->
     <footer id="footer" class="padding-xs">
         <div class="copy container">
             <div class="footer-flexbox">
                 <div>
-                    <strong>ChasKicks</strong> &mdash;
-                    <a href="mailto:contacto@chaskicks.pe" style="color:var(--color5); text-decoration:none;">contacto@chaskicks.pe</a>
-                    &mdash;
-                    <a href="tel:+51978376193" style="color:var(--color5); text-decoration:none;">+51 978 376 193</a>
+                    &copy; 2026 ChasKicks - Todos los derechos reservados
                 </div>
                 <div class="footer-social-text">
                     <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a>
                     <a target="_blank" href="https://instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    <a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                     <a target="_blank" href="https://youtube.com"><i class="fa-brands fa-youtube"></i> Youtube</a>
                 </div>
-            </div>
-            <div style="text-align:center; margin-top:6px;">
-                &copy; 2026 ChasKicks - Todos los derechos reservados
             </div>
         </div>
     </footer>
 
     <!-- Boton flotante para volver al inicio de la pagina -->
-    <a class="scroll-up" href="#" id="scroll-up-btn">
+    <a class="scroll-up" href="#">
         <i class="fa-solid fa-angle-up"></i>
     </a>
 
